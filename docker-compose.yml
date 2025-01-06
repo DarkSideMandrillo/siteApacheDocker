@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80" # Il sito sarà accessibile su http://localhost:8080
+    volumes:
+      - ./src:/usr/local/apache2/htdocs # Monta i file del sito
+      - ./logs:/usr/local/apache2/logs # Monta i log
+      - ./apache-config:/usr/local/apache2/conf # Monta la configurazione di Apache
+    container_name: apache_server

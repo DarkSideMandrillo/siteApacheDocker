@@ -1,0 +1,14 @@
+{
+  "name": "Docker Apache",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [
+    8080
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder}/src,target=/usr/local/apache2/htdocs,type=bind",
+    "source=${localWorkspaceFolder}/logs,target=/usr/local/apache2/logs,type=bind",
+    "source=${localWorkspaceFolder}/apache-config,target=/usr/local/apache2/conf,type=bind"
+  ]
+}
