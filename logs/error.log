@@ -10,3 +10,8 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Sat Jan 04 11:32:42.793952 2025] [core:error] [pid 264:tid 140661379098304] [remote 198.251.89.114:443] AH01961:  failed to enable ssl support [Hint: if using mod_ssl, see SSLProxyEngine]
 [Sat Jan 04 11:32:42.794275 2025] [proxy:error] [pid 264:tid 140661379098304] AH00961: https: failed to enable ssl support for 198.251.89.114:443 (supersimplebackend.dev)
 [Sat Jan 04 11:43:03.771755 2025] [mpm_event:notice] [pid 1:tid 140661394904960] AH00492: caught SIGWINCH, shutting down gracefully
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Jan 07 08:18:35.661065 2025] [ssl:warn] [pid 1:tid 140059242276736] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Jan 07 08:18:35.678171 2025] [mpm_event:notice] [pid 1:tid 140059242276736] AH00489: Apache/2.4.57 (Unix) OpenSSL/3.0.11 configured -- resuming normal operations
+[Tue Jan 07 08:18:35.678487 2025] [core:notice] [pid 1:tid 140059242276736] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue Jan 07 08:21:32.921818 2025] [mpm_event:notice] [pid 1:tid 140059242276736] AH00492: caught SIGWINCH, shutting down gracefully
